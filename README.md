@@ -2,7 +2,7 @@
 
 This project demonstrates a robust end-to-end ETL (Extract, Transform, Load) pipeline that consolidates retail data from disparate international markets into a cloud-hosted **PostgreSQL** database on **Render**.
 
-## 🛠️ Tech Stack
+## Tech Stack
 * **Language:** Python 3.x
 * **Libraries:** Pandas, SQLAlchemy, Dotenv
 * **Database:** PostgreSQL (Hosted on Render)
@@ -10,7 +10,7 @@ This project demonstrates a robust end-to-end ETL (Extract, Transform, Load) pip
 
 ---
 
-## 🧪 ETL Process & Methodology
+## ETL Process & Methodology
 
 ### 1. Extraction
 Raw retail data was extracted from two distinct CSV sources representing different regional markets:
@@ -27,7 +27,7 @@ The cleaned and transformed data (2,000 total rows) was pushed to a **PostgreSQL
 
 ---
 
-## 💡 Key Business Insights
+## Key Business Insights
 
 Based on the successfully processed data, the following insights were generated via SQL analysis:
 
@@ -39,13 +39,24 @@ Based on the successfully processed data, the following insights were generated 
 | **Customer Spend** | Average spend is significantly higher in Myanmar. | **$6.97** (MM) vs **$1.21** (JP) |
 | **Demographics** | Female customers represent the majority. | **54.05%** of Transactions |
 
-### 🔍 Analysis Summary
+### Analysis Summary
 While transaction volume was equal across both regions (1,000 each), the **Myanmar market contributed 85% of total revenue**. This disparity suggests that the Myanmar dataset reflects a higher-tier product mix or higher purchasing power compared to the Japan retail dataset. Globally, **Clothing** leads in volume, but **Electronics** provides the highest revenue per unit.
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 1. Clone the repository.
 2. Install dependencies: 
    ```bash
    pip install -r requirements.txt
+3. Configure Environment: Add your DATABASE_URL to your environment variables or a .env file.
+4. Execute Pipeline:
+   ```bash
+   python etl_pipeline.py
+
+---
+## Live Deployment
+Link: https://retail-etl-pipeline-render-bitco.onrender.com
+Note on Directory Listing: Since this is a Cloud Computing activity rather than a frontend web application, the live link displays a directory listing. This is intentional and it confirms the Python script successfully initialized a lightweight server after completing the ETL process. The presence of the files in the directory serves as visual confirmation that the deployment environment is active and the pipeline has successfully executed in the cloud.
+
+   
