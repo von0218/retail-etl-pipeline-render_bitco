@@ -15,7 +15,7 @@ def run_etl():
         
         print("--- ⚙️ Transformation Phase ---")
         
-        # --- CLEAN JAPAN PRICE ---
+        # Clean Japan Price
         # Find the column that contains 'Price' or use the 4th column as fallback
         j_price_col = [c for c in df_j.columns if 'Price' in c or 'price' in c]
         j_col = j_price_col[0] if j_price_col else df_j.columns[3]
