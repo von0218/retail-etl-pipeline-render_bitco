@@ -57,6 +57,10 @@ While transaction volume was equal across both regions (1,000 each), the **Myanm
 ---
 ## Live Deployment
 Link: https://retail-etl-pipeline-render-bitco.onrender.com
+
 Note on Directory Listing: Since this is a Cloud Computing activity rather than a frontend web application, the live link displays a directory listing. This is intentional and it confirms the Python script successfully initialized a lightweight server after completing the ETL process. The presence of the files in the directory serves as visual confirmation that the deployment environment is active and the pipeline has successfully executed in the cloud.
+
+
+nag buhat ko balik sir hihi 
 
    
